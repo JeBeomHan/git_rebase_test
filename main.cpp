@@ -29,7 +29,7 @@ int main(void){
 	int result = 0;
 	switch(input){
 		case 1: break;
-		case 2: cout << func_minus(num1, num2) << '\n\n'; break;
+		case 2: cout << func_minus(num1, num2) << '\n\n\n'; break;
 		case 3: break;
 		case 4: break;
 	}
