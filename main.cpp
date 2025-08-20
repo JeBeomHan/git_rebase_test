@@ -3,7 +3,9 @@
 using namespace std;
 
 int func_minus(const int& num1, const int& num2);
-
+int multiple(int a, int b){
+	return a*b;
+}
 int main(void){
 	int input;
 	
@@ -31,7 +33,7 @@ int main(void){
 		case 1: break;
 		case 2: cout << func_minus(num1, num2) << '\n\n\n'; break;
 		case 3: break;
-		case 4: break;
+		case 4: cout << multiple(num1, num2)<< endl; break;
 	}
 	cout << '\n';
 }
