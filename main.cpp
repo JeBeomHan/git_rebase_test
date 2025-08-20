@@ -8,7 +8,7 @@ int main(void){
 	int input;
 	
 	cout << "1 is add\n";
-        cout << "2 is subtract\n";
+        cout << "2 is minus\n";
         cout << "3 is multiple\n";
         cout << "4 is divide\n";
 
