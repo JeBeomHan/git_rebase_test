@@ -2,6 +2,8 @@
 
 using namespace std;
 
+int func_minus(const int& num1, const int& num2);
+
 int main(void){
 	int input;
 	
@@ -27,7 +29,7 @@ int main(void){
 	int result = 0;
 	switch(input){
 		case 1: break;
-		case 2: break;
+		case 2: cout << func_minus(num1, num2) << '\n\n'; break;
 		case 3: break;
 		case 4: break;
 	}
@@ -39,4 +41,8 @@ void printMenu(void){
 	cout << "2 is subtract\n";
 	cout << "3 is multiple\n";
 	cout << "4 is divide\n";
+}
+
+int func_minus(const int& num1, const int& num2){
+	return num1 - num2;
 }
