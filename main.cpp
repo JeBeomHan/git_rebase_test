@@ -6,12 +6,13 @@ float divide(int a,int b){
 	if(b==0)return -1; //divide zero
 	return a/b;
 }
+int func_minus(const int& num1, const int& num2);
 
 int main(void){
 	int input;
 	
 	cout << "1 is add\n";
-        cout << "2 is subtract\n";
+        cout << "2 is minus\n";
         cout << "3 is multiple\n";
         cout << "4 is divide\n";
 
@@ -32,7 +33,7 @@ int main(void){
 	int result = 0;
 	switch(input){
 		case 1: break;
-		case 2: break;
+		case 2: cout << func_minus(num1, num2) << '\n\n\n'; break;
 		case 3: break;
 		case 4: divide(num1,num2);break;
 	}
@@ -44,4 +45,8 @@ void printMenu(void){
 	cout << "2 is subtract\n";
 	cout << "3 is multiple\n";
 	cout << "4 is divide\n";
+}
+
+int func_minus(const int& num1, const int& num2){
+	return num1 - num2;
 }
