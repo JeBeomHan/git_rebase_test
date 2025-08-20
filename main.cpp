@@ -4,6 +4,8 @@ using namespace std;
 
 int func_minus(const int& num1, const int& num2);
 
+void func_add(const int&num1, const int&num2);
+
 int main(void){
 	int input;
 	
@@ -30,7 +32,7 @@ int main(void){
 	switch(input){
 		case 1: break;
 		case 2: cout << func_minus(num1, num2) << '\n\n'; break;
-		case 3: break;
+		case 3: cout<<func_add(num1,num2)<<"\n";break;
 		case 4: break;
 	}
 	cout << '\n';
@@ -45,4 +47,9 @@ void printMenu(void){
 
 int func_minus(const int& num1, const int& num2){
 	return num1 - num2;
+
+}
+
+int func_add(const int&num1, const int&num2){
+	return num1 + num2;
 }
